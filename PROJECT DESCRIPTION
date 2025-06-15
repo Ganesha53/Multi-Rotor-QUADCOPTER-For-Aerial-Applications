@@ -1,0 +1,32 @@
+1. Define Project Objectives
+Objective: The objective of this project is to design and develop a drone system that integrates advanced control strategies, such as those using the KK2.1.5 flight controller and FS-i6 transmitter, to enhance stability and precision in various applications. The primary goals include:
+• Improving Operational Efficiency: Enhance drone performance for tasks like inspection, monitoring, and delivery.
+• Increasing Safety: Reduce risks by automating hazardous tasks and improving navigation.
+• Enhancing Accuracy: Provide precise data for decision-making in industries such as agriculture and construction.
+• Promoting Innovation: Explore new applications and technologies to expand the utility of drones in different sectors.
+• Addressing Challenges: Investigate and mitigate operational challenges such as regulatory issues and energy efficiency.
+Applications: Identify potential applications such as aerial photography, search and rescue, agriculture purposes and recreational use.
+2. Select Hardware Components
+Drone Platform: Choose a suitable drone model that supports custom modifications and has adequate payload capacity for additional sensors.
+Controlling Device: The transmitter of a drone can be a wearable sensor device or controller. The Controller is a measuring and commanding device of directions of the drone i.e; pitch, yaw, throttle, and roll. Consisting of different channels to operate for various features.
+Microcontroller: Use a microcontroller (e.g., Arduino, Raspberry Pi) to process sensor data and communicate with the drone's flight controller. Or use Flight controllers specially designed for drones. (Here, we use KK2.1.5 Flight controller which having in-built sensors including Gyro and Accelerometer)
+3. Develop Communication System
+Sensor Integration: Integrate the wearable sensors with the microcontroller to capture real-time data on commands. Use sensors like:
+Accelerometers: Measure tilt and acceleration.
+Gyroscopes: Detect orientation and rotation.
+Flex Sensors: Measure bending for gest.
+Data Processing: Implement algorithms to process the raw sensor data. This may involve:
+Filtering: Apply filters to smooth the sensor readings and reduce noise.
+Feature Extraction: Identify key features from the sensor data that correspond to specific commands of the remote.
+4. Establish Communication Protocol
+Communication between Devices: Set up a communication protocol (e.g., Bluetooth, Wi-Fi) to transmit commands from the controller to the drone. We can use RF module where Transmitter, Receiver or Transceiver.
+Command Mapping: Create a mapping of recognized commands like yaw, throttle, roll and pitch to drone commands (e.g., forward, backward, rotate).
+5. Develop Control Software
+Drone Control Software: Write software for the drone's flight controller that interprets incoming commands from the transmitter. (we use FS-i6 transmitter and receiver).
+Testing and Calibration: Test the responsiveness and accuracy of commands. Calibrate the system to ensure reliable operation in various environments.
+6. Prototype Development
+Assemble Components: Integrate the drone, sensors, and Flight controller into a working prototype.
+Software Development: Setting up the Flight Controller and updating the PI Editor and other necessary tuning to handle sensor data processing, command recognition from transmitter , and drone control.
+7. Conduct Testing and Iteration
+Field Testing: Conduct extensive testing in controlled environments to evaluate the performance of the system and the drone's responsiveness.
+User Feedback: Gather feedback from users to identify usability issues and areas for improvement.
